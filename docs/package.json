@@ -1,0 +1,21 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.72.0",
+    "vitepress": "^1.0.1",
+    "vitepress-theme-demoblock": "^3.0.5"
+  },
+  "dependencies": {
+    "@swc-ui/components": "workspace:^",
+     "clipboard-copy": "^4.0.1"
+  }
+}
