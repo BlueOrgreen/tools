@@ -1,5 +1,3 @@
-E
-
 ### Theme Data
 
 <pre>{{ theme }}</pre>
