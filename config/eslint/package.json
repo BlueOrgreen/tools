@@ -1,5 +1,5 @@
 {
-  "name": "@swc-ui/eslint-config",
+  "name": "@draw-ui/eslint-config",
   "version": "0.0.2",
   "files": [
     "base.js",

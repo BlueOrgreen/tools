@@ -17,12 +17,15 @@ importers:
       '@commitlint/config-conventional':
         specifier: ^19.1.0
         version: 19.6.0
+      '@draw-ui/eslint-config':
+        specifier: workspace:^
+        version: link:config/eslint
+      '@draw-ui/typescript-config':
+        specifier: workspace:^
+        version: link:config/typescript
       '@stencil/core':
         specifier: ^4.7.0
         version: 4.24.0
-      '@swc-ui/eslint-config':
-        specifier: workspace:^
-        version: link:config/eslint
       '@types/node':
         specifier: ^22.10.7
         version: 22.10.7
@@ -102,30 +105,11 @@ importers:
         specifier: ^5.3.3
         version: 5.7.3
 
-  config/typescript:
-    devDependencies:
-      '@stencil/core':
-        specifier: ^4.7.0
-        version: 4.24.0
-      '@types/jest':
-        specifier: ^29.5.6
-        version: 29.5.14
-      '@types/node':
-        specifier: ^16.18.11
-        version: 16.18.124
-      jest:
-        specifier: ^29.7.0
-        version: 29.7.0(@types/node@16.18.124)
-      jest-cli:
-        specifier: ^29.7.0
-        version: 29.7.0(@types/node@16.18.124)
-      puppeteer:
-        specifier: ^21.9.0
-        version: 21.11.0(typescript@5.7.3)
+  config/typescript: {}
 
   docs:
     dependencies:
-      '@swc-ui/components':
+      '@draw-ui/components':
         specifier: workspace:^
         version: link:../packages/components
       clipboard-copy:
@@ -147,6 +131,9 @@ importers:
       '@stencil/core':
         specifier: ^4.7.0
         version: 4.24.0
+      '@stencil/sass':
+        specifier: ^3.0.11
+        version: 3.0.12(@stencil/core@4.24.0)
       '@types/jest':
         specifier: ^29.5.6
         version: 29.5.14
@@ -1151,6 +1138,12 @@ packages:
     resolution: {integrity: sha512-v0CYQkfd+id3dXoRSYp7yLsx/kogsfwJBE0YUm/5SBpxy4tcdXNaRrWFVwV//fkdcFmjm3awwS3edxbW+X7pmw==}
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
+
+  '@stencil/sass@3.0.12':
+    resolution: {integrity: sha512-aXMgpG13ftxLYo2dDauapvE9gKzSxTAqCMOfTqbPhKUCZ43JsknkLx+PArRaFtfYeVGSQ8eTS4ck7/Nlec+PNA==}
+    engines: {node: '>=12.0.0', npm: '>=6.0.0'}
+    peerDependencies:
+      '@stencil/core': '>=2.0.0 || >=3.0.0-beta.0 || >= 4.0.0-beta.0 || >= 4.0.0'
 
   '@tootallnate/quickjs-emscripten@0.23.0':
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
@@ -6132,6 +6125,10 @@ snapshots:
       '@sinonjs/commons': 3.0.1
 
   '@stencil/core@4.24.0': {}
+
+  '@stencil/sass@3.0.12(@stencil/core@4.24.0)':
+    dependencies:
+      '@stencil/core': 4.24.0
 
   '@tootallnate/quickjs-emscripten@0.23.0': {}
 

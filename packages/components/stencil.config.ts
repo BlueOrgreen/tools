@@ -1,7 +1,8 @@
 import { Config } from '@stencil/core';
+import { sass } from '@stencil/sass';
 
 export const config: Config = {
-  namespace: 'components',
+  namespace: 'draw-ui',
   outputTargets: [
     {
       type: 'dist',
@@ -21,6 +22,7 @@ export const config: Config = {
     },
   ],
   testing: {
-    browserHeadless: "new",
+    browserHeadless: true,
   },
+  plugins: [sass()],
 };

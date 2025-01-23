@@ -1,9 +1,9 @@
 {
-  "name": "@swc-ui/typescript-config",
+  "name": "@draw-ui/typescript-config",
   "version": "0.0.2",
   "license": "MIT",
   "exports": {
-    "./base": "./base.js",
+    "./base": "./base.json",
     "./stencil": "./stencil.js"
   },
   "files": [

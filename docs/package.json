@@ -15,7 +15,7 @@
     "vitepress-theme-demoblock": "^3.0.5"
   },
   "dependencies": {
-    "@swc-ui/components": "workspace:^",
-     "clipboard-copy": "^4.0.1"
+    "@draw-ui/components": "workspace:^",
+    "clipboard-copy": "^4.0.1"
   }
 }

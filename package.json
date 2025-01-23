@@ -19,7 +19,6 @@
     "@changesets/cli": "^2.27.1",
     "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
-    "@swc-ui/eslint-config": "workspace:^",
     "@stencil/core": "^4.7.0",
     "@typescript-eslint/eslint-plugin": "^7.5.0",
     "@typescript-eslint/parser": "^7.5.0",
@@ -35,7 +34,9 @@
     "npm-run-all": "^4.1.5",
     "@types/node": "^22.10.7",
     "only-allow": "^1.2.1",
-    "turbo": "^2.3.3"
+    "turbo": "^2.3.3",
+    "@draw-ui/eslint-config": "workspace:^",
+    "@draw-ui/typescript-config": "workspace:^"
   },
   "config": {
     "commitizen": {
